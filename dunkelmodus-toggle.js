@@ -13,12 +13,11 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-// CSS für den Dunkelmodus
 const style = document.createElement('style');
 style.innerHTML = `
     body.dark {
         background-color: #121212;
         color: #ffffff;
     }
-    `;
+`;
 document.head.appendChild(style);
