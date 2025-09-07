@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const toggleButton = document.createElement('button');
-    toggleButton.innerText = 'Dunkelmodus umschalten';
+    toggleButton.innerText = 'Toggle Dark Mode';
     document.body.appendChild(toggleButton);
 
     let currentMode = localStorage.getItem('mode') || 'light';
