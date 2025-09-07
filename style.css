@@ -12,5 +12,5 @@ div {
 
 div:hover {
     background-color: #d0d0d0;  /* Changed to a darker shade for better contrast */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);  /* Increased shadow spread for more prominence */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);  /* Increased shadow spread for more prominence */
 }
