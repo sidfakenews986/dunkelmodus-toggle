@@ -9,3 +9,7 @@ div {
     padding: 15px;
     border-radius: 8px;
 }
+
+div:hover {
+    background-color: #e0e0e0;
+}
