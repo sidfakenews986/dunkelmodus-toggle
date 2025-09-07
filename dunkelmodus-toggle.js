@@ -3,15 +3,13 @@ document.addEventListener('DOMContentLoaded', function () {
     toggleButton.innerText = 'Dunkelmodus umschalten';
     document.body.appendChild(toggleButton);
 
-    const currentMode = localStorage.getItem('mode') || 'light';
+    let currentMode = localStorage.getItem('mode') || 'light';
     document.body.classList.toggle('dark', currentMode === 'dark');
 
     toggleButton.addEventListener('click', function () {
-        const newMode = currentMode === 'dark' ? 'light' : 'dark';
-        // Update currentMode variable to reflect change
-        currentMode = newMode;
-        document.body.classList.toggle('dark', newMode === 'dark');
-        localStorage.setItem('mode', newMode);
+        currentMode = currentMode === 'dark' ? 'light' : 'dark';
+        document.body.classList.toggle('dark', currentMode === 'dark');
+        localStorage.setItem('mode', currentMode);
     });
 });
 
