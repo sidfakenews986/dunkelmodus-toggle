@@ -8,6 +8,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     toggleButton.addEventListener('click', function () {
         const newMode = currentMode === 'dark' ? 'light' : 'dark';
+        // Update currentMode variable to reflect change
+        currentMode = newMode;
         document.body.classList.toggle('dark', newMode === 'dark');
         localStorage.setItem('mode', newMode);
     });
